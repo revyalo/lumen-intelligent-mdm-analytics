@@ -4,7 +4,7 @@
 
 **v0.1.0 preparation:** locally audited and uploaded to a private repository with owner approval. GitHub-hosted CI is blocked before runner startup; no remote test pass is claimed. [Release audit](docs/RELEASE_AUDIT.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE).
 
-**Unreleased branch:** Operational Time Analytics adds a ninth section on a separate local branch. The package version remains 0.1.0; this extension has not been pushed. [Operational guide, contracts and evidence](docs/operational_time/README.md).
+**Unreleased branch:** Operational Time Analytics adds a ninth section on a private feature branch, uploaded with owner approval. The package version remains 0.1.0. [Draft review #1](https://github.com/revyalo/lumen-intelligent-mdm-analytics/pull/1) is open; the extension is not merged into main. [Operational guide, contracts and evidence](docs/operational_time/README.md).
 
 A local Python portfolio project for data analytics, data engineering and machine learning. The fictional **Lumen Distribution** workspace brings exploratory analysis, quality scoring, SQL business intelligence and reversible master-data review into one Streamlit application. All results are calculated from the selected data; no KPI is hard-coded.
 
@@ -156,6 +156,6 @@ Production dependencies are exactly the requested stack: pandas/NumPy, DuckDB, S
 
 Created from a blank project with Codex assistance, using newly generated fiction and original Lumen identity. A historical assessment was consulted as background only. No source assessment document, original sample data, company brand resource or commercial template is included. The owner should review and understand this code before presenting it as portfolio work.
 
-The base is a **tested local release candidate**. Operational Time Analytics is an unreleased local extension on `feature/operational-time-analytics`; its source is not present on GitHub yet. Code has been pushed to the [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) with the owner's approval. GitHub-hosted validation remains blocked before runner startup. No public release or tag exists; public visibility and release publication still require a separate decision.
+The base is a **tested local release candidate**. Operational Time Analytics is an unreleased extension uploaded to the private branch `feature/operational-time-analytics`, under draft review #1. Code has been pushed to the [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) with the owner's approval. GitHub-hosted validation remains blocked before runner startup. No public release or tag exists; public visibility and release publication still require a separate decision.
 
 The project’s own code, documentation, synthetic fixtures and original Lumen assets are covered by [MIT](LICENSE). Dependencies retain their own licenses. See [Third-party notices](THIRD_PARTY_NOTICES.md), the installed [license inventory](docs/audit/dependency-licenses.csv), and [publication metadata](docs/GITHUB_METADATA.md). The source release does not bundle dependency wheels or model weights.

@@ -1,6 +1,6 @@
 # Operational Time Analytics — local delivery audit
 
-Date: **2026-10-29**. Branch: **feature/operational-time-analytics**. Base: `fd7dae2cb3510856d2f454f24d38da1d349ca08a` on main. Package version remains **0.1.0**. This is an unreleased local extension, with no push, tag, release or public-visibility change.
+Date: **2026-10-29**. Branch: **feature/operational-time-analytics**. Base: `fd7dae2cb3510856d2f454f24d38da1d349ca08a` on main. Package version remains **0.1.0**. The extension was uploaded to the private feature branch with owner approval after local validation. [Draft review #1](https://github.com/revyalo/lumen-intelligent-mdm-analytics/pull/1) is open. No merge, tag, release or public-visibility change was made.
 
 ## Functional outcome
 
@@ -23,7 +23,7 @@ Availability and capacities are explicit. Zero-visit resource-days are included 
 | Distribution | Built wheel and installed it into an isolated target in the verified dependency environment. Python `-I` imported the new module from that target, generated a temporal CLI fixture, created a valid operational report and executed all six packaged SQL queries. [Record](wheel-check.json). This is a distribution-content check, not a new cross-platform environment certification. |
 | Visual QA | Started the local Streamlit server, opened the new page in a real browser, verified computed metrics/plots and saved actual screenshots. Browser tab and temporary server were closed. |
 | Benchmarks | Eight real runs: 100/1,000/10,000/50,000 rows × seeds 42/123, plus independently checked demo expectations. [Raw timings](experiments/performance.csv), [measurement environment](experiments/summary.json), [known-answer check](experiments/demo-check.json). |
-| CI definition | Added operational CLI/report smoke checks and small benchmarks; actionlint **v1.7.12 passes**. No remote execution of this branch is claimed. |
+| CI definition | Added operational CLI/report smoke checks and small benchmarks; actionlint **v1.7.12 passes**. The workflow was triggered remotely, but the account-level restriction stopped all three jobs before runner startup; no remote tests executed. |
 | Publication hygiene | Known secret/personal-path/reference markers, excluded runtime/model/reference artifacts and file-size/ZIP checks scanned locally without findings. Scan is heuristic and screenshots were visually reviewed. No external reference PDF, branding, dataset or copied instructions are included. |
 
 ## Measured performance and limits
@@ -60,9 +60,9 @@ Timezone/DST inference, automatic fuzzy employee merging, predictive ML, distrib
 
 ## Git and remaining publication gates
 
-The original main branch stays at the base commit above. The extension is committed locally on its feature branch and the delivered ZIP matches that commit. It has **not** been pushed to GitHub. The historical GitHub-hosted runner restriction recorded in the base audit remains unresolved/unverified in this task. Local passing tests and a valid workflow do not establish Linux/Windows or hosted-CI success.
+The original main branch stays at the base commit above. The locally verified source commit `c9bbe29ad9a8a5f49a2b8533efebfb0cc67838aa` was pushed with owner approval to the private feature branch. [Actions run 40949509733](https://github.com/revyalo/lumen-intelligent-mdm-analytics/actions/runs/40949509733) was blocked before all three runners started by the account-level restriction. Local passing tests and a valid workflow do not establish Linux/Windows or hosted-CI success. A subsequent documentation-only commit records the upload and blocker, using `[skip ci]` to avoid another identical blocked attempt. The delivered ZIP matches the branch head; application source is unchanged from the tested commit.
 
-A later additive release could be **0.2.0**, after review and successful intended-revision CI, but the official version is unchanged. Push, public visibility and a release/tag require separate authorization.
+A later additive release could be **0.2.0**, after review and successful intended-revision CI, but the official version is unchanged. The private push is authorized and complete. Merge, public visibility and a release/tag require a separate decision.
 
 ## Launch and demonstrate
 
