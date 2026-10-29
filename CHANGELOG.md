@@ -17,12 +17,14 @@
 - Resolved five import-order lint findings with scoped bootstrap annotations.
 - Added SHA-pinned GitHub Actions for lint, dependency consistency, publication checks, tests, CLI smoke checks and notebook execution.
 - Prepared repository description, topics, release notes and a recorded audit.
+- Uploaded the candidate to the private preparation repository with owner approval.
+- Fixed Actions temporary-directory initialization and validated the workflow with actionlint v1.7.12.
 
 ### Verification boundaries
 
 - Core workflows are locally verified; exact audit commands/results are in `docs/RELEASE_AUDIT.md`.
-- GitHub-hosted CI is pending the owner's approval for the first private push.
+- GitHub-hosted CI was triggered; an account-level restriction prevented all three hosted jobs from starting. Remote tests have not run.
 - Optional semantic matching has not been executed; its model and optional dependency licenses remain unevaluated.
 - Forecasting, authenticated multiuser deployment and production load validation are not included.
 
-No public release or push is performed by preparing this candidate.
+The repository remains private. No public release or version tag has been created.

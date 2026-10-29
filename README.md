@@ -2,7 +2,7 @@
 
 **Turn fragmented business data into evidence you can inspect, reproduce and explain.**
 
-**v0.1.0 preparation:** locally audited; GitHub-hosted CI is pending the first approved private push. [Release audit](docs/RELEASE_AUDIT.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE).
+**v0.1.0 preparation:** locally audited and uploaded to a private repository with owner approval. GitHub-hosted CI is blocked before runner startup; no remote test pass is claimed. [Release audit](docs/RELEASE_AUDIT.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE).
 
 A local Python portfolio project for data analytics, data engineering and machine learning. The fictional **Lumen Distribution** workspace brings exploratory analysis, quality scoring, SQL business intelligence and reversible master-data review into one Streamlit application. All results are calculated from the selected data; no KPI is hard-coded.
 
@@ -120,7 +120,7 @@ Exact business definitions, score formulas, clustering features, RFM thresholds 
 
 See [Validation and measured results](docs/VALIDATION.md), [experiment manifest](docs/experiments/summary.json), [matching metrics](docs/experiments/matching.csv), [quality](docs/experiments/quality.csv), [clustering](docs/experiments/clustering.csv), [anomalies](docs/experiments/anomalies.csv) and [timings](docs/experiments/performance.csv). These contain executed results, including candidate misses, rather than illustrative numbers.
 
-The two notebooks include saved outputs. `scripts/execute_notebooks.py` uses the current interpreter and executes every code cell. GitHub Actions is configured for Python 3.11/3.12 on Ubuntu and Python 3.12 on Windows, with lint, dependency consistency, publication checks, tests and notebook execution; remote CI execution has not occurred because this project has not been pushed.
+The two notebooks include saved outputs. `scripts/execute_notebooks.py` uses the current interpreter and executes every code cell. GitHub Actions is configured for Python 3.11/3.12 on Ubuntu and Python 3.12 on Windows, with lint, dependency consistency, publication checks, tests and notebook execution. The approved private push triggered Actions, but an account-level runner restriction prevented all three jobs from starting. [Run and diagnosis](docs/RELEASE_AUDIT.md#github-actions-attempt). The corrected workflow passes actionlint v1.7.12; Linux/Windows test results remain unverified.
 
 ## Optional semantic extension
 
@@ -141,6 +141,6 @@ Production dependencies are exactly the requested stack: pandas/NumPy, DuckDB, S
 
 Created from a blank project with Codex assistance, using newly generated fiction and original Lumen identity. A historical assessment was consulted as background only. No source assessment document, original sample data, company brand resource or commercial template is included. The owner should review and understand this code before presenting it as portfolio work.
 
-This is a **tested local release candidate**. The [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) has been created empty. No code has been pushed, no GitHub-hosted CI result is claimed, and no public release exists. The first private push and later public visibility require separate owner approval.
+This is a **tested local release candidate**. Code has been pushed to the [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) with the owner's approval. GitHub-hosted validation remains blocked before runner startup. No public release or tag exists; public visibility and release publication still require a separate decision.
 
 The project’s own code, documentation, synthetic fixtures and original Lumen assets are covered by [MIT](LICENSE). Dependencies retain their own licenses. See [Third-party notices](THIRD_PARTY_NOTICES.md), the installed [license inventory](docs/audit/dependency-licenses.csv), and [publication metadata](docs/GITHUB_METADATA.md). The source release does not bundle dependency wheels or model weights.

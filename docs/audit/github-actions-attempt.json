@@ -1,0 +1,25 @@
+{
+  "checked_on": "2026-10-29",
+  "repository": "revyalo/lumen-intelligent-mdm-analytics",
+  "visibility": "private",
+  "owner_approved_private_push": true,
+  "initial_commit": "5abeb7a68397167c013912fc2a0e066391f84194",
+  "initial_run_id": 40865172468,
+  "initial_result": "workflow_configuration_rejected",
+  "resolved_configuration_issue": "Initialize temporary directories in a step instead of using runner context in job-level env",
+  "workflow_validator": "actionlint v1.7.12",
+  "workflow_validator_exit_code": 0,
+  "corrected_commit": "407807520376baed6c1635757c538e51003a561f",
+  "corrected_run_id": 40876052929,
+  "corrected_run_url": "https://github.com/revyalo/lumen-intelligent-mdm-analytics/actions/runs/40876052929",
+  "workflow_accepted": true,
+  "jobs": [
+    {"id": 123455022158, "platform": "ubuntu-latest", "python": "3.11", "result": "blocked_before_runner_start"},
+    {"id": 123455022251, "platform": "ubuntu-latest", "python": "3.12", "result": "blocked_before_runner_start"},
+    {"id": 123455022413, "platform": "windows-latest", "python": "3.12", "result": "blocked_before_runner_start"}
+  ],
+  "blocker": "Account-level hosted-runner restriction; owner action required in GitHub account settings",
+  "remote_tests_executed": false,
+  "public_release_created": false,
+  "version_tag_created": false
+}

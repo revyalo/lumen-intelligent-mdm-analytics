@@ -1,8 +1,8 @@
 # Lumen v0.1.0 — publication preparation audit
 
-Audit date: **2026-10-29**. Verdict: **ready for a first private push and GitHub CI validation, subject to the owner's approval**. This is a new local verification run using a fresh environment, not an external independent review. No new application features were added.
+Audit date: **2026-10-29**. Verdict: **private push completed with owner approval; hosted CI is blocked before runner startup**. This is a local verification run using fresh environments, not an external independent review. No new application features were added.
 
-The preparation repository is [revyalo/lumen-intelligent-mdm-analytics](https://github.com/revyalo/lumen-intelligent-mdm-analytics). It was created **private and empty**. Its private/empty state was verified through GitHub; no code was pushed. [Recorded state](audit/repository-state.json).
+The preparation repository is [revyalo/lumen-intelligent-mdm-analytics](https://github.com/revyalo/lumen-intelligent-mdm-analytics). It was created private and empty, then populated after the owner approved the private push. It remains **private**. No version tag or public release was created. [Recorded state](audit/repository-state.json).
 
 ## Findings resolved
 
@@ -23,6 +23,7 @@ The preparation repository is [revyalo/lumen-intelligent-mdm-analytics](https://
 | Dependency consistency | `python -m pip check`: no broken requirements. |
 | Lint | `python -m ruff check .`: passed for production modules, dashboard, tests, notebooks and release scripts. |
 | Full tests | **41 passed**, 0 failures, 0 errors, 0 skips; 211.565 seconds on the cold environment. [JUnit](test-results.xml). This includes the eight pages, search, page/table state, SQL execution and report generation. |
+| Committed-source reproduction | The prepared commit was cloned into a separate directory and installed in a second new environment: **41 passed**, 0 failures/errors; 200.22 seconds. This verifies the tracked source, including the retained `intelligent_mdm/models` package. |
 | Notebooks | Both rerun successfully: 10 + 12 code cells executed, no error outputs. Saved notebook outputs are included. |
 | Source provenance | All **17** demo bundle/label/manifest files regenerated **byte for byte** using the documented generator and seed 42. [Hashes and result](audit/synthetic-provenance.json). |
 | Multi-scale experiments | Demo/large × seeds 42/123 executed again. Non-timing matching, quality, clustering and anomaly results reproduce the original delivery. [Fresh results](audit/experiments/summary.json). |
@@ -31,13 +32,13 @@ The preparation repository is [revyalo/lumen-intelligent-mdm-analytics](https://
 | Streamlit server | Started with the fresh environment, opened in a real browser, and visually checked. The overview screenshot was refreshed from that run; the temporary server was stopped after inspection. |
 | Publication contents | Known credential/key signatures, hard-coded personal paths, original-reference markers, file budgets and nested ZIP contents scanned without findings. [Summary](audit/release-scan-summary.json). |
 | Dependency licenses | **83** installed third-party/tooling distributions inventoried; no unknown declared license metadata. Direct runtime notices and bundled numerical/font/runtime caveats reviewed. [Third-party notices](../THIRD_PARTY_NOTICES.md). |
-| GitHub status | Repository private and empty; **remote CI has not run**, because the owner has not approved a push. |
+| GitHub status | Approved private push complete. The corrected workflow was accepted, but all three hosted jobs were blocked before startup by an account-level runner restriction; **remote tests have not run**. |
 
 The publication scan is heuristic, not a guarantee against every possible secret. Screenshots were visually inspected; the source includes original Lumen assets and newly generated synthetic business data, not original assessment resources. The source release excludes downloaded packages/models and the local review database. Synthetic fixtures contain reserved `.example` email addresses and intentionally malformed test strings, not private contacts.
 
 The data generator, quality definitions, business metrics, matching thresholds and model features were not expanded during this audit. The initial statistical experiment write-up remains in [VALIDATION.md](VALIDATION.md); `docs/audit/experiments/` records the new verification timings and results. Its non-timing metrics were compared against `docs/experiments/` using dataframe assertions.
 
-## CI prepared, not claimed as passed
+## GitHub Actions attempt
 
 The workflow targets Ubuntu Python 3.11/3.12 and Windows Python 3.12. It installs from source, validates dependency consistency, runs Ruff, audits the publication tree, records license metadata, runs all tests and smoke-tests the CLI. Ubuntu Python 3.12 additionally runs experiments and notebooks. It uses read-only repository permissions and stores diagnostic artifacts.
 
@@ -47,17 +48,21 @@ Action refs were verified against the official repositories:
 - setup-python v7.0.0: `5fda3b95a4ea91299a34e894583c3862153e4b97`
 - upload-artifact v7.0.2: `cf430e030ddbb5b0abf93d22962f4752f3646cd9`
 
-These workflow files have been reviewed locally; they have **not** been executed by GitHub. Python 3.11/Linux/Windows behavior remains pending that run. A dependency inventory/pip check does not constitute an online vulnerability database scan.
+The first push of `5abeb7a68397167c013912fc2a0e066391f84194` exposed an invalid reference to `runner.temp` in job-level environment variables. These paths are now initialized in a Python step through `GITHUB_ENV` using `RUNNER_TEMP`, as required by [GitHub context availability](https://docs.github.com/en/actions/reference/workflows-and-actions/contexts#context-availability). The corrected workflow passes **actionlint v1.7.12**, local Ruff and the publication scan.
+
+The corrected commit `407807520376baed6c1635757c538e51003a561f` triggered [Actions run 40876052929](https://github.com/revyalo/lumen-intelligent-mdm-analytics/actions/runs/40876052929). GitHub accepted the workflow and expanded the three jobs. All three were stopped before startup by an account-level hosted-runner restriction. This is not a test failure or a successful test run. [Structured evidence](audit/github-actions-attempt.json).
+
+The repository owner must resolve the restriction in GitHub account settings before rerunning the workflow on the intended release commit. Python 3.11/Linux/Windows behavior remains unverified. A dependency inventory/pip check does not constitute an online vulnerability database scan.
 
 ## Remaining publication gates
 
-1. Owner approves the first push of the prepared local commit to the **private** repository.
-2. GitHub Actions completes on that exact commit. Investigate any platform/dependency failures before proceeding.
+1. Resolve the account-level restriction that prevents GitHub-hosted runners from starting.
+2. Run GitHub Actions on the intended release commit and require all three jobs to pass. Investigate any platform/dependency failures before proceeding.
 3. Owner reviews the results and separately decides public visibility and publication/tagging as `v0.1.0`.
 
 Optional embeddings remain **NOT RUN**. No model was downloaded, and the semantic extra/model license graph is outside the core inventory. Forecasting, authentication/multiuser deployment and production load validation are outside this release. Matching scores are heuristics, not calibrated probabilities; synthetic benchmark results are not real-world performance claims.
 
-No unresolved local test/lint/install failure remains. The pending remote CI and optional semantic evaluation are explicit verification boundaries, not successful results.
+No unresolved local test/lint/install failure remains. Hosted CI remains blocked and optional semantic evaluation remains unexecuted; neither is claimed as successful.
 
 ## Reproduce from a clean checkout
 

@@ -1,6 +1,6 @@
 # Lumen — Intelligent MDM & Analytics v0.1.0
 
-Prepared release notes. Publication is pending owner approval and GitHub-hosted CI.
+Prepared release notes. The approved private push is complete; public publication remains pending owner approval and GitHub-hosted CI. An account-level restriction currently prevents hosted runners from starting.
 
 A local data intelligence workspace covering exploratory analysis, quality scoring, DuckDB business analytics/RFM, reversible master-data review and descriptive machine learning.
 
