@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased — Operational Time Analytics
+
+- Added a ninth workspace with strict local-time input validation, explicit quarantine, source-preserving interval unions and unique-person event sweeps.
+- Added continuous-threshold contact evidence, tied rankings, daily peak plateaus, explicit availability/capacity, weighted hourly metrics and exact identity mapping with before/after comparison.
+- Added original known-answer/multi-day fixtures, CLI generation/analysis/benchmarks and shared report archive packaging.
+- Extended regression tests and CI definitions; uploaded the branch privately with owner approval and opened draft review #1. Hosted runners remain blocked before startup.
+- Package version remains 0.1.0; a possible later additive release is 0.2.0, subject to review/validation. No release/tag is created.
+
 ## [0.1.0] — 2026-10-29 (local release candidate)
 
 ### Included

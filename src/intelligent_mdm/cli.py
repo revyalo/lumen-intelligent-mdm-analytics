@@ -24,6 +24,8 @@ def main():
     report.add_argument("--seed", type=int, default=42)
     report.add_argument("--table", default="customer_sources")
     report.add_argument("--output", type=Path, default=Path("runtime/evidence_report.zip"))
+    from intelligent_mdm.operational_time.commands import add_time_commands
+    add_time_commands(sub)
     args = parser.parse_args()
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO, format="%(levelname)s %(name)s: %(message)s")
     if args.command == "generate":
@@ -45,6 +47,13 @@ def main():
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_bytes(build_report(bundle, name=args.table))
         print(f"Evidence report: {args.output}")
+
+    elif args.command.startswith("time-"):
+        from intelligent_mdm.operational_time.commands import run_time_command
+        try:
+            run_time_command(args)
+        except (ValueError, OSError) as exc:
+            parser.error(str(exc))
 
 
 if __name__ == "__main__":

@@ -16,7 +16,7 @@ PATTERNS = {
     "aws_access_key": re.compile(r"AKIA[0-9A-Z]{16}"),
     "private_key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     "external_api_key": re.compile(r"sk-(?:proj-)?[A-Za-z0-9_-]{32,}"),
-    "original_assessment": re.compile(r"(?i)\b(?:" + "[aá]" + "baco|" + "or" + "via|" + "guia_" + "prueba" + r")\b"),
+    "original_assessment": re.compile(r"(?i)\b(?:" + "[aá]" + "baco|" + "or" + "via|" + "guia_" + "prueba|" + "bao" + "bab|" + "prueba_sala_" + "reuniones_caliente" + r")\b"),
 }
 FORBIDDEN_SUFFIXES = {".pem", ".key", ".sqlite", ".db", ".joblib", ".pkl", ".pickle",
                       ".pt", ".pth", ".safetensors", ".onnx", ".pdf"}

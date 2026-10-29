@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "distribution_version": "0.1.0",
+  "isolated_interpreter": true,
+  "imports_from_installed_wheel": true,
+  "new_operational_module": true,
+  "operational_report_valid": true,
+  "installed_cli_generation": true,
+  "packaged_sql_query_rows": {
+    "monthly_sales": 24,
+    "customer_summary": 120,
+    "product_performance": 48,
+    "category_margin": 4,
+    "repeat_customers": 88,
+    "price_history": 96
+  },
+  "new_dependencies": []
+}

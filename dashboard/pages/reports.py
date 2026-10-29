@@ -40,3 +40,8 @@ if (folder / "summary.json").exists():
     st.subheader("Executed experiment record")
     st.json(json.loads((folder / "summary.json").read_text()))
     st.caption("These saved experiments have their own dataset size/seed provenance; they do not change when sidebar filters change.")
+
+
+st.subheader("Operational evidence")
+st.page_link("pages/operational_time.py", label="Open Operational Time Analytics", icon=":material/schedule:")
+st.caption("Temporal reports use their own resource, population and observation-window scope.")

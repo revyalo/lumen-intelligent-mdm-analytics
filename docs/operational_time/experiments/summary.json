@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14",
+  "platform": "Darwin",
+  "sizes": [
+    100,
+    1000,
+    10000,
+    50000
+  ],
+  "seeds": [
+    42,
+    123
+  ],
+  "runs": 8,
+  "demo_expected_results": "PASS",
+  "schedule": "Benchmarks use observed spans; availability/capacity are not inferred",
+  "memory_measure": "DataFrame deep storage only; excludes Python objects, temporary allocations and peak process RSS",
+  "limits": "One run per size/seed, local machine; no production capacity or hosted-CI claim"
+}
