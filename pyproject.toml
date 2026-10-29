@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-mdm-analytics"
+version = "0.1.0"
+description = "A reproducible local data intelligence lab: analytics, quality and reversible MDM"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "David Arévalo Rey"}]
+dependencies = [
+  "pandas>=2.2,<3", "numpy>=1.26,<3", "duckdb>=1.1,<2",
+  "streamlit>=1.55,<2", "plotly>=5.24,<7", "matplotlib>=3.9,<4",
+  "scikit-learn>=1.5,<2", "rapidfuzz>=3.9,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "nbformat>=5.10,<6", "nbclient>=0.10,<1", "ipykernel>=6,<8", "packaging>=24,<27"]
+semantic = ["sentence-transformers>=3,<6"]
+
+[project.scripts]
+intelligent-mdm = "intelligent_mdm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+intelligent_mdm = ["sql/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

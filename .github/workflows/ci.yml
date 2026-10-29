@@ -1,0 +1,71 @@
+name: Lumen release validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python: "3.11"
+          - os: ubuntu-latest
+            python: "3.12"
+          - os: windows-latest
+            python: "3.12"
+    runs-on: ${{ matrix.os }}
+    env:
+      MPLBACKEND: Agg
+      MPLCONFIGDIR: ${{ runner.temp }}/lumen-matplotlib
+      MDM_RUNTIME_DIR: ${{ runner.temp }}/lumen-runtime
+      LOKY_MAX_CPU_COUNT: "2"
+    steps:
+      - name: Check out source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install from source
+        run: python -m pip install -e ".[dev]"
+      - name: Validate dependency consistency
+        run: python -m pip check
+      - name: Lint source, tests and notebooks
+        run: python -m ruff check .
+      - name: Audit publication tree
+        run: python scripts/release_audit.py --output runtime/release-audit.json
+      - name: Record dependency license metadata
+        run: python scripts/dependency_inventory.py --output runtime/dependency-licenses.json
+      - name: Run unit and Streamlit interaction tests
+        run: python -m pytest --junitxml=runtime/test-results.xml
+      - name: Smoke test the installed CLI
+        run: intelligent-mdm generate --size demo --seed 42 --output runtime/demo
+      - name: Run reproducible experiments
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: intelligent-mdm experiments --scales demo --seeds 42 --output runtime/experiments
+      - name: Execute notebooks
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python scripts/execute_notebooks.py
+      - name: Preserve validation evidence
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: validation-${{ matrix.os }}-python-${{ matrix.python }}
+          path: runtime/
+          retention-days: 14

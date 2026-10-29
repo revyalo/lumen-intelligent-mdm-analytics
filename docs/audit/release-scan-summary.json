@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "files_scanned": 131,
+  "findings": [],
+  "scope": "Known token/key signatures, personal paths, reference names, file sizes and ZIP members",
+  "limits": "Heuristic source scan, not a guarantee against every secret. Images require visual review.",
+  "date": "2026-10-29"
+}

@@ -1,0 +1,14 @@
+{
+  "installed_from_wheel": true,
+  "isolated_import_from_environment": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "queries_executed": {
+    "monthly_sales": 24,
+    "customer_summary": 120,
+    "product_performance": 48,
+    "category_margin": 4,
+    "repeat_customers": 88,
+    "price_history": 96
+  }
+}

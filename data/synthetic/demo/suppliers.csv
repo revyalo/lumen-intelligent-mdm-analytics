@@ -1,0 +1,13 @@
+supplier_id,name,tax_id,email,updated_at
+S000,Lattice Supply 00,VENDOR00000,orders0@supplier.example,2026-09-30
+S001,Lattice Supply 01,VENDOR00001,orders1@supplier.example,2026-09-30
+S002,Lattice Supply 02,VENDOR00002,orders2@supplier.example,2026-09-30
+S003,Lattice Supply 03,VENDOR00003,orders3@supplier.example,2026-09-30
+S004,Lattice Supply 04,VENDOR00004,orders4@supplier.example,2026-09-30
+S005,Lattice Supply 05,VENDOR00005,orders5@supplier.example,2026-09-30
+S006,Lattice Supply 06,VENDOR00006,orders6@supplier.example,2026-09-30
+S007,Lattice Supply 07,VENDOR00007,orders7@supplier.example,2026-09-30
+S008,Lattice Supply 08,VENDOR00008,orders8@supplier.example,2026-09-30
+S009,Lattice Supply 09,VENDOR00009,orders9@supplier.example,2026-09-30
+S010,Lattice Supply 10,VENDOR00010,orders10@supplier.example,2026-09-30
+S011,Lattice Supply 11,VENDOR00011,orders11@supplier.example,2026-09-30

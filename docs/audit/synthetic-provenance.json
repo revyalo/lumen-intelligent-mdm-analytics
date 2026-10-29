@@ -1,0 +1,91 @@
+{
+  "seed": 42,
+  "files": [
+    {
+      "path": "categories.csv",
+      "reproduced_identically": true,
+      "sha256": "a4142c59da3100f6fffcf47880caeab824f89c93a8e70bfae0452d44a06c520e"
+    },
+    {
+      "path": "customer_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "aca2a47b46a261a3e3af6b440289c60c66f59414885b5a5f7cd42ba0f044fe0d"
+    },
+    {
+      "path": "customers.csv",
+      "reproduced_identically": true,
+      "sha256": "7686cafeac982b3884f3c539c4dc1dbaba3b5134a8ae86bd1964c7e27879700f"
+    },
+    {
+      "path": "evaluation_only/bulk_purchases.csv",
+      "reproduced_identically": true,
+      "sha256": "447e8f54ce341aea9ce65c46cc88ae0b0d120b6cb5bd404c6d9bca0ee955baa9"
+    },
+    {
+      "path": "evaluation_only/customer_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "3b7b008809deef7bed519e17e85875a4b1af642df5eb6ea8de71547a42e6d681"
+    },
+    {
+      "path": "evaluation_only/product_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "c51c03546ac77beac27935ad59747acd40832b0f391ef82fe786aeb92d0664e6"
+    },
+    {
+      "path": "evaluation_only/supplier_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "eefc7c6d99fb058c6be97d38cf08ddfef1eeeb829e7964a6ab0789e4f74bb46d"
+    },
+    {
+      "path": "inventory.csv",
+      "reproduced_identically": true,
+      "sha256": "47e4d9dbed65536ba99254476229dd2a73056e8a0f83bed9cd15bf1e81e8930d"
+    },
+    {
+      "path": "manifest.json",
+      "reproduced_identically": true,
+      "sha256": "6150f3c82b7914bcb0abebe7fa7c2062e2a65cc409bc9aacce0df5b02c959fe3"
+    },
+    {
+      "path": "order_lines.csv",
+      "reproduced_identically": true,
+      "sha256": "1d3803c840fa4575735dc564ed44c024c6ca81ba2d85583a23ba499b4fc46bbf"
+    },
+    {
+      "path": "orders.csv",
+      "reproduced_identically": true,
+      "sha256": "3bf2e8f4b2933b6944ba4136a853c2ef957402504283804cd2c7488b036a2b7c"
+    },
+    {
+      "path": "product_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "03657808b0248074bc58168bbe83015d9d0e890af397cea905ee0631e36182d4"
+    },
+    {
+      "path": "products.csv",
+      "reproduced_identically": true,
+      "sha256": "7eda20276bacddb99c56c9c0ee9f9116dc8ce00b1413f3dbd1d0b49c7f2b706a"
+    },
+    {
+      "path": "sales.csv",
+      "reproduced_identically": true,
+      "sha256": "56ac42af9b0a3220c206aeef64df5e912c03694384d22ef62616d062f0c97936"
+    },
+    {
+      "path": "stock_movements.csv",
+      "reproduced_identically": true,
+      "sha256": "1ae2ffe3f3bec6d06afa4a5cac54d8fde9bff1b07238a86eeb352e9fe851b5a2"
+    },
+    {
+      "path": "supplier_sources.csv",
+      "reproduced_identically": true,
+      "sha256": "5052e7de8de8a017a65a7f18e5bd8e37cb37b9a2f2204be205169e5ea1244490"
+    },
+    {
+      "path": "suppliers.csv",
+      "reproduced_identically": true,
+      "sha256": "cdfeeb36ac8285b360bc48da2fa212b74ec9c714027c7cd34d49cbaa22517b9e"
+    }
+  ],
+  "status": "PASS"
+}

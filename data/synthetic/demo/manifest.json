@@ -1,0 +1,11 @@
+{
+  "company": "Lumen Distribution",
+  "size": "demo",
+  "seed": 42,
+  "as_of": "2026-09-30",
+  "currency": "EUR",
+  "period_start": "2024-10-01",
+  "period_end": "2026-09-30",
+  "generator_version": 1,
+  "synthetic": true
+}

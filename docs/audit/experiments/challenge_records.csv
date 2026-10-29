@@ -1,0 +1,15 @@
+record_id,name,tax_id,email
+a1,Harbor Industrial Supplies,SYN001,office@harbor.example
+a2,Harbour Industrial Supply,,
+b1,Amber Warehouse,SYN002,hi@amber.example
+b2, Amber WAREHOUSE ,,
+c1,Kepler Office,SYN003,team@kepler.example
+c2,Keplr Office,SYN003,
+d1,Nova Trading,SYN004,x@nova.example
+d2,Nova Trading,SYN005,y@nova.example
+e1,Willow Logistics,,
+e2,Willow Logistic,,
+f1,Cedar Materials,SYN006,a@cedar.example
+f2,Cedar Materials,SYN007,b@cedar.example
+g1,Tangent Distributors,,
+g2,TD Wholesale,,

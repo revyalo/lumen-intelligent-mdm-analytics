@@ -1,0 +1,84 @@
+package,version,scope,direct_runtime,declared_license,license_evidence,notice_files
+altair,6.3.0,runtime,False,BSD License,Classifier,1
+anyio,4.15.1,runtime,False,MIT,License-Expression,1
+appnope,1.0.0,development,False,BSD-2-Clause,License-Expression,1
+asttokens,3.0.2,development,False,Apache 2.0,License first line,1
+attrs,26.1.0,runtime,False,MIT,License-Expression,1
+certifi,2026.10.23,runtime,False,Mozilla Public License 2.0 (MPL 2.0),Classifier,1
+charset-normalizer,3.5.2,runtime,False,MIT,License first line,1
+click,8.5.0,runtime,False,BSD-3-Clause,License-Expression,1
+cloudpickle,3.1.2,runtime,False,BSD License,Classifier,1
+comm,0.2.3,development,False,BSD License,Classifier,1
+contourpy,1.4.0,runtime,False,BSD-3-Clause,License-Expression,1
+cycler,0.12.1,runtime,False,BSD License,Classifier,1
+debugpy,1.8.22,development,False,MIT License,Classifier,1
+duckdb,1.5.6,runtime,True,MIT License,Classifier,2
+executing,2.3.0,development,False,MIT License,Classifier,1
+fastjsonschema,2.22.2,development,False,BSD License,Classifier,1
+fonttools,4.68.0,runtime,False,MIT,License first line,2
+h11,0.16.0,runtime,False,MIT License,Classifier,1
+idna,3.20,runtime,False,BSD-3-Clause,License-Expression,1
+iniconfig,2.3.1,development,False,MIT,License-Expression,1
+ipykernel,7.4.0,development,False,BSD-3-Clause,License-Expression,1
+ipython,9.17.1,development,False,BSD-3-Clause,License-Expression,2
+ipython-pygments-lexers,1.1.1,development,False,BSD License,Classifier,1
+itsdangerous,2.2.0,runtime,False,BSD License,Classifier,1
+jedi,0.20.1,development,False,MIT License,Classifier,3
+jinja2,3.1.6,runtime,False,BSD License,Classifier,1
+joblib,1.6.0,runtime,False,BSD-3-Clause,License-Expression,1
+jsonschema,4.26.0,runtime,False,MIT,License-Expression,1
+jsonschema-specifications,2025.9.1,runtime,False,MIT,License-Expression,1
+jupyter-client,8.10.0,development,False,BSD License,Classifier,1
+jupyter-core,5.9.1,development,False,BSD-3-Clause,License-Expression,1
+kiwisolver,1.5.1,runtime,False,BSD License,Classifier,1
+markupsafe,3.0.4,runtime,False,BSD-3-Clause,License-Expression,1
+matplotlib,3.11.2,runtime,True,Python Software Foundation License,Classifier,3
+matplotlib-inline,0.2.2,development,False,BSD-3-Clause,License-Expression,1
+narwhals,2.28.0,runtime,False,MIT,License-Expression,1
+nbclient,0.11.0,development,False,BSD License,Classifier,1
+nbformat,5.11.1,development,False,BSD License,Classifier,1
+nest-asyncio2,1.7.4,development,False,BSD License,Classifier,1
+numpy,2.5.4,runtime,True,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0,License-Expression,19
+packaging,26.3,runtime,False,Apache-2.0 OR BSD-2-Clause,License-Expression,3
+pandas,2.3.3,runtime,True,BSD License,Classifier,1
+parso,0.8.7,development,False,MIT License,Classifier,1
+pexpect,4.9.0,development,False,ISC License (ISCL),Classifier,1
+pillow,13.0.0,runtime,False,MIT-CMU,License-Expression,1
+pip,25.0.1,installer/tooling,False,MIT License,Classifier,1
+platformdirs,4.14.0,development,False,MIT,License-Expression,1
+plotly,6.9.0,runtime,True,MIT,License-Expression,1
+pluggy,1.7.0,development,False,MIT License,Classifier,1
+prompt-toolkit,3.0.53,development,False,BSD License,Classifier,1
+protobuf,7.36.2,runtime,False,3-Clause BSD License,License first line,1
+psutil,7.2.2,development,False,BSD-3-Clause,License first line,1
+ptyprocess,0.7.0,development,False,ISC License (ISCL),Classifier,1
+pure-eval,0.2.4,development,False,MIT License,Classifier,1
+pyarrow,26.0.0,runtime,False,Apache-2.0,License-Expression,2
+pydeck,0.9.3,runtime,False,Apache License 2.0,License first line,1
+pygments,2.21.0,development,False,BSD-2-Clause,License-Expression,1
+pyparsing,3.3.3,runtime,False,MIT,License-Expression,1
+pytest,9.2.0,development,False,MIT,License-Expression,1
+python-dateutil,3.0.0,runtime,False,BSD License; Apache Software License,Classifier,1
+python-multipart,0.0.32,runtime,False,Apache-2.0,License-Expression,1
+pytz,2026.6,runtime,False,MIT License,Classifier,1
+pyzmq,27.2.0,development,False,BSD-3-Clause,License-Expression,4
+rapidfuzz,3.14.6,runtime,True,MIT,License-Expression,1
+referencing,0.37.0,runtime,False,MIT,License-Expression,1
+requests,2.34.2,runtime,False,Apache Software License,Classifier,2
+rpds-py,2026.9.1,runtime,False,MIT,License-Expression,1
+ruff,0.17.3,development,False,MIT,License-Expression,1
+scikit-learn,1.9.1,runtime,True,BSD-3-Clause,License-Expression,3
+scipy,1.18.1,runtime,False,BSD License,Classifier,5
+six,1.17.0,runtime,False,MIT License,Classifier,1
+stack-data,0.6.3,development,False,MIT License,Classifier,1
+starlette,1.10.0,runtime,False,BSD-3-Clause,License-Expression,1
+streamlit,1.66.1,runtime,True,Apache-2.0,License-Expression,0
+threadpoolctl,3.7.0,runtime,False,BSD-3-Clause,License-Expression,1
+tornado,6.6,development,False,Apache Software License,Classifier,1
+traitlets,5.16.1,development,False,BSD License,Classifier,1
+typing-extensions,4.16.0,runtime,False,PSF-2.0,License-Expression,1
+tzdata,2026.6,runtime,False,Apache-2.0,License first line,2
+urllib3,2.8.0,runtime,False,MIT,License-Expression,1
+uvicorn,0.54.0,runtime,False,BSD-3-Clause,License-Expression,1
+wcwidth,0.9.4,development,False,MIT License,Classifier,1
+websockets,17.3,runtime,False,BSD-3-Clause,License-Expression,1

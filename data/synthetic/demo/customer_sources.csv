@@ -1,0 +1,253 @@
+name,tax_id,email,phone,region,created_at,updated_at,record_id,source
+  SOLSTICE WORKS 0013  ,SYN00000013,accounts13@customer.example,+34 910 000013,West,2024-05-14,2026-07-27,CR00013-1,sales
+  VELA SUPPLY 0034  ,SYN00000034,accounts34@customer.example,+34 910 000034,Central,2024-04-14,2026-07-09,CR00034-1,sales
+Vela Supply 0084,SYN00000084,accounts84@customer.example,+34910000084,West,2024-04-19,2026-03-19,CR00084-0,administration
+  ASTR STUDIO 0000  ,,,+34 910 000000,,2024-04-15,2023-01-01,CR00000-1,sales
+Cobalt Works 0061,SYN00000061,accounts61@customer.example,+34910000061,West,2024-02-06,2026-04-18,CR00061-0,administration
+  VLA TRADING 0024  ,SYN00000024,accounts24@customer.example,+34 910 000024,,2024-08-26,2026-03-17,CR00024-1,sales
+  ASTER STUDIO 0050  ,SYN00000050,,+34 910 000050,West,2024-01-26,2023-01-01,CR00050-1,sales
+Aster Studio 0025,SYN00000025,accounts25@customer.example,+34910000025,West,2024-07-23,2026-06-06,CR00025-0,administration
+  VELA WORKS 0114  ,SYN00000114,invalid-email,+34 910 000114,,2024-04-28,2026-03-21,CR00114-1,sales
+Aster Studio 0050,SYN00000050,accounts50@customer.example,+34910000050,West,2024-01-26,2026-04-22,CR00050-0,administration
+Cobalt Studio 0051,SYN00000051,accounts51@customer.example,+34910000051,North,2024-01-22,2026-08-08,CR00051-0,administration
+  ASTR LABS 0040  ,SYN00000040,,+34 910 000040,North,2024-08-27,2023-01-01,CR00040-1,sales
+Aster Studio 0100,SYN00000100,accounts100@customer.example,+34910000100,Central,2024-01-31,2026-05-27,CR00100-0,administration
+Cobalt Studio 0001,SYN00000001,accounts1@customer.example,+34910000001,West,2024-06-09,2026-06-06,CR00001-0,administration
+  VELA WORKS 0014  ,,accounts14@customer.example,+34 910 000014,West,2024-07-09,2026-05-21,CR00014-1,sales
+  ASTER TRADING 0070  ,,,+34 910 000070,West,2024-06-13,2023-01-01,CR00070-1,sales
+  COBALT WORKS 0036  ,SYN00000036,accounts36@customer.example,+34 910 000036,,2024-01-31,2026-06-29,CR00036-1,sales
+Vela Labs 0019,SYN00000019,accounts19@customer.example,+34910000019,East,2024-04-14,2026-06-05,CR00019-0,administration
+Vela Labs 0094,SYN00000094,accounts94@customer.example,+34910000094,Central,2024-06-25,2026-06-30,CR00094-0,administration
+  VLA LABS 0044  ,SYN00000044,accounts44@customer.example,+34 910 000044,North,2024-04-10,2026-07-04,CR00044-1,sales
+Cobalt Supply 0031,SYN00000031,accounts31@customer.example,+34910000031,South,2024-03-08,2026-09-26,CR00031-0,administration
+  JUNIPER LABS 0117  ,SYN00000117,accounts117@customer.example,+34 910 000117,North,2024-04-13,2026-04-05,CR00117-1,sales
+  COBALT WORKS 0111  ,SYN00000111,accounts111@customer.example,+34 910 000111,West,2024-07-24,2026-09-22,CR00111-1,sales
+Juniper Supply 0057,SYN00000057,accounts57@customer.example,+34910000057,North,2024-02-08,2026-07-05,CR00057-0,administration
+Juniper Studio 0102,SYN00000102,accounts102@customer.example,+34910000102,Central,2024-06-17,2026-05-29,CR00102-0,administration
+Solstice Works 0063,SYN00000063,accounts63@customer.example,+34910000063,Central,2024-06-16,2026-04-04,CR00063-0,administration
+  ASTR TRADING 0020  ,SYN00000020,,+34 910 000020,East,2024-08-23,2023-01-01,CR00020-1,sales
+Cobalt Trading 0096,SYN00000096,accounts96@customer.example,+34910000096,South,2024-01-20,2026-03-22,CR00096-0,administration
+  ASTER WORKS 0010  ,SYN00000010,,+34 910 000010,East,2024-05-15,2023-01-01,CR00010-1,sales
+Aster Studio 0000,SYN00000000,accounts0@customer.example,+34910000000,North,2024-04-15,2026-09-02,CR00000-0,administration
+Cobalt Works 0111,SYN00000111,accounts111@customer.example,+34910000111,West,2024-07-24,2026-09-22,CR00111-0,administration
+Vela Works 0089,SYN00000089,accounts89@customer.example,+34910000089,Central,2024-07-05,2026-06-12,CR00089-0,administration
+Aster Labs 0090,SYN00000090,accounts90@customer.example,+34910000090,East,2024-03-03,2026-06-13,CR00090-0,administration
+Solstice Labs 0118,SYN00000118,accounts118@customer.example,+34910000118,South,2024-03-15,2026-09-12,CR00118-0,administration
+  ASTER SUPPLY 0055  ,SYN00000055,,+34 910 000055,North,2024-04-20,2026-06-18,CR00055-1,sales
+Juniper Works 0087,SYN00000087,accounts87@customer.example,+34910000087,South,2024-08-20,2026-09-23,CR00087-0,administration
+  SOLSTICE SUPPLY 0058  ,SYN00000057,accounts58@customer.example,+34 910 000058,West,2024-08-04,2026-08-05,CR00058-1,sales
+Juniper Studio 0052,SYN00000052,accounts52@customer.example,+34910000052,South,2024-07-04,2026-03-24,CR00052-0,administration
+Aster Supply 0080,SYN00000080,accounts80@customer.example,+34910000080,Central,2024-03-28,2026-07-28,CR00080-0-copy,administration
+  VLA WORKS 0064  ,SYN00000064,accounts64@customer.example,+34 910 000064,East,2024-04-28,2026-06-14,CR00064-1,sales
+Aster Studio 0100,SYN00000100,accounts100@customer.example,+34910000100,Central,2024-01-31,2026-05-27,CR00100-0-copy,administration
+  COBALT WORKS 0011  ,SYN00000011,accounts11@customer.example,+34 910 000011,Central,2024-05-12,2026-06-24,CR00011-1,sales
+  SOLSTICE LABS 0018  ,SYN00000018,accounts18@customer.example,+34 910 000018,,2024-03-24,2026-08-26,CR00018-1,sales
+Aster Works 0010,SYN00000010,accounts10@customer.example,+34910000010,East,2024-05-15,2026-08-26,CR00010-0-copy,administration
+  VELA STUDIO 0079  ,SYN00000079,accounts79@customer.example,+34 910 000079,West,2024-08-18,2026-04-30,CR00079-1,sales
+  JUNIPER LABS 0017  ,SYN00000017,accounts17@customer.example,+34 910 000017,North,2024-01-08,2026-09-10,CR00017-1,sales
+  COBALT STUDIO 0051  ,SYN00000051,accounts51@customer.example,+34 910 000051,North,2024-01-22,2026-08-08,CR00051-1,sales
+  VELA STUDIO 0054  ,SYN00000054,accounts54@customer.example,+34 910 000054,,2024-06-16,2026-06-13,CR00054-1,sales
+Solstice Works 0013,SYN00000013,accounts13@customer.example,+34910000013,West,2024-05-14,2026-07-27,CR00013-0,administration
+Vela Supply 0109,SYN00000109,accounts109@customer.example,+34910000109,West,2024-02-12,2026-08-29,CR00109-0,administration
+Cobalt Supply 0081,SYN00000081,accounts81@customer.example,+34910000081,East,2024-08-06,2026-09-09,CR00081-0,administration
+Vela Works 0039,SYN00000039,accounts39@customer.example,+34910000039,West,2024-07-07,2026-09-14,CR00039-0,administration
+Solstice Labs 0068,SYN00000068,accounts68@customer.example,+34910000068,North,2024-02-27,2026-07-29,CR00068-0,administration
+  SOLSTIC SUPPLY 0008  ,SYN00000008,accounts8@customer.example,+34 910 000008,South,2024-05-17,2026-04-26,CR00008-1,sales
+Cobalt Labs 0041,SYN00000041,accounts41@customer.example,+34910000041,West,2024-06-08,2026-06-25,CR00041-0,administration
+Solstice Studio 0053,SYN00000053,accounts53@customer.example,+34910000053,East,2024-06-22,2026-07-26,CR00053-0,administration
+Juniper Studio 0027,SYN00000027,accounts27@customer.example,+34910000027,Central,2024-02-26,2026-07-23,CR00027-0,administration
+  SOLSTICE WORKS 0113  ,SYN00000113,accounts113@customer.example,+34 910 000113,East,2024-07-01,2026-07-05,CR00113-1,sales
+  JUNIPR WORKS 0112  ,,accounts112@customer.example,+34 910 000112,East,2024-01-05,2026-08-02,CR00112-1,sales
+  ASTER WORKS 0085  ,SYN00000085,,+34 910 000085,West,2024-03-04,2026-08-15,CR00085-1,sales
+Juniper Labs 0067,SYN00000067,accounts67@customer.example,+34910000067,South,2024-04-01,2026-06-12,CR00067-0,administration
+  JUNIPER TRADING 0047  ,SYN00000047,accounts47@customer.example,+34 910 000047,Central,2024-02-10,2026-06-08,CR00047-1,sales
+Aster Supply 0105,SYN00000105,accounts105@customer.example,+34910000105,West,2024-03-14,2026-08-10,CR00105-0,administration
+Cobalt Studio 0026,SYN00000026,accounts26@customer.example,+34910000026,East,2024-01-09,2026-07-03,CR00026-0,administration
+Cobalt Labs 0066,SYN00000066,accounts66@customer.example,+34910000066,Central,2024-02-09,2026-08-01,CR00066-0,administration
+  SOLSTICE SUPPLY 0033  ,SYN00000033,accounts33@customer.example,+34 910 000033,East,2024-03-11,2026-03-23,CR00033-1,sales
+  VELA WORKS 0039  ,SYN00000039,accounts39@customer.example,+34 910 000039,West,2024-07-07,2026-09-14,CR00039-1,sales
+Cobalt Labs 0091,SYN00000091,accounts91@customer.example,+34910000091,Central,2024-06-21,2026-07-18,CR00091-0,administration
+  JUNIPER LABS 0067  ,SYN00000067,accounts67@customer.example,+34 910 000067,South,2024-04-01,2026-06-12,CR00067-1,sales
+Vela Supply 0009,SYN00000009,accounts9@customer.example,+34910000009,North,2024-06-01,2026-09-22,CR00009-0,administration
+  COBALT SUPPLY 0106  ,SYN00000106,accounts106@customer.example,+34 910 000106,West,2024-07-13,2026-03-16,CR00106-1,sales
+Cobalt Trading 0046,SYN00000046,accounts46@customer.example,+34910000046,East,2024-03-18,2026-08-29,CR00046-0,administration
+Cobalt Labs 0116,SYN00000116,accounts116@customer.example,+34910000116,North,2024-06-08,2026-08-31,CR00116-0,administration
+  SOLSTICE LABS 0093  ,SYN00000093,accounts93@customer.example,+34 910 000093,South,2024-04-17,2026-04-18,CR00093-1,sales
+Aster Works 0060,SYN00000060,accounts60@customer.example,+34910000060,Central,2024-08-13,2026-07-20,CR00060-0,administration
+Juniper Labs 0092,SYN00000092,accounts92@customer.example,+34910000092,Central,2024-07-08,2026-07-31,CR00092-0,administration
+Solstice Works 0088,SYN00000088,accounts88@customer.example,+34910000088,West,2024-03-04,2026-09-02,CR00088-0,administration
+Vela Labs 0069,SYN00000069,accounts69@customer.example,+34910000069,East,2024-03-13,2026-09-09,CR00069-0,administration
+  JUNIPER TRADING 0022  ,SYN00000022,accounts22@customer.example,+34 910 000022,North,2024-03-07,2026-08-02,CR00022-1,sales
+Cobalt Labs 0016,SYN00000016,accounts16@customer.example,+34910000016,East,2024-05-24,2026-05-18,CR00016-0,administration
+Aster Labs 0040,SYN00000040,accounts40@customer.example,+34910000040,North,2024-08-27,2026-08-06,CR00040-0,administration
+Vela Works 0014,SYN00000014,accounts14@customer.example,+34910000014,West,2024-07-09,2026-05-21,CR00014-0,administration
+  JUNIPER WORKS 0087  ,SYN00000086,accounts87@customer.example,+34 910 000087,South,2024-08-20,2026-09-23,CR00087-1,sales
+  VELA TRADING 0049  ,,accounts49@customer.example,+34 910 000049,West,2024-01-06,2026-06-28,CR00049-1,sales
+  COBALT TRADING 0096  ,SYN00000096,accounts96@customer.example,+34 910 000096,,2024-01-20,2026-03-22,CR00096-1,sales
+Vela Supply 0034,SYN00000034,accounts34@customer.example,+34910000034,Central,2024-04-14,2026-07-09,CR00034-0,administration
+Aster Studio 0000,SYN00000000,accounts0@customer.example,+34910000000,North,2024-04-15,2026-09-02,CR00000-0-copy,administration
+Solstice Labs 0018,SYN00000018,accounts18@customer.example,+34910000018,Central,2024-03-24,2026-08-26,CR00018-0,administration
+  COBALT TRADING 0046  ,SYN00000046,accounts46@customer.example,+34 910 000046,East,2024-03-18,2026-08-29,CR00046-1,sales
+Vela Studio 0104,SYN00000104,accounts104@customer.example,+34910000104,West,2024-06-22,2026-04-02,CR00104-0,administration
+  SOLSTICE STUDIO 0078  ,SYN00000078,accounts78@customer.example,+34 910 000078,,2024-03-22,2026-03-27,CR00078-1,sales
+  SOLSTICE STUDIO 0103  ,SYN00000103,accounts103@customer.example,+34 910 000103,North,2024-02-18,2026-06-19,CR00103-1,sales
+  JUNIPR WORKS 0012  ,SYN00000012,accounts12@customer.example,+34 910 000012,,2024-01-22,2026-08-24,CR00012-1,sales
+Juniper Works 0112,SYN00000112,accounts112@customer.example,+34910000112,East,2024-01-05,2026-08-02,CR00112-0,administration
+  JUNIPER LABS 0042  ,,accounts42@customer.example,+34 910 000042,,2024-04-08,2026-05-19,CR00042-1,sales
+Vela Trading 0074,SYN00000074,accounts74@customer.example,+34910000074,West,2024-08-18,2026-08-13,CR00074-0,administration
+Solstice Works 0113,SYN00000113,accounts113@customer.example,+34910000113,East,2024-07-01,2026-07-05,CR00113-0,administration
+Vela Trading 0024,SYN00000024,accounts24@customer.example,+34910000024,West,2024-08-26,2026-03-17,CR00024-0,administration
+  JUNIPER SUPPLY 0007  ,,accounts7@customer.example,+34 910 000007,West,2024-07-02,2026-07-09,CR00007-1,sales
+Juniper Works 0012,SYN00000012,accounts12@customer.example,+34910000012,West,2024-01-22,2026-08-24,CR00012-0,administration
+  ASTER WORKS 0110  ,SYN00000110,,+34 910 000110,South,2024-04-21,2023-01-01,CR00110-1,sales
+Cobalt Works 0086,SYN00000086,accounts86@customer.example,+34910000086,North,2024-07-02,2026-08-14,CR00086-0,administration
+  VELA SUPPLY 0109  ,SYN00000109,accounts109@customer.example,+34 910 000109,West,2024-02-12,2026-08-29,CR00109-1,sales
+  SOLSTICE TRADING 0073  ,SYN00000073,accounts73@customer.example,+34 910 000073,North,2024-03-27,2026-08-05,CR00073-1,sales
+Solstice Studio 0028,SYN00000028,accounts28@customer.example,+34910000028,East,2024-07-16,2026-05-31,CR00028-0,administration
+  VELA TRADING 0074  ,SYN00000074,accounts74@customer.example,+34 910 000074,West,2024-08-18,2026-08-13,CR00074-1,sales
+Solstice Works 0038,SYN00000038,accounts38@customer.example,+34910000038,South,2024-05-01,2026-09-18,CR00038-0,administration
+  ASTER TRADING 0095  ,SYN00000095,,+34 910 000095,South,2024-03-06,2026-04-22,CR00095-1,sales
+Cobalt Works 0036,SYN00000036,accounts36@customer.example,+34910000036,Central,2024-01-31,2026-06-29,CR00036-0,administration
+  VLA STUDIO 0004  ,SYN00000004,accounts4@customer.example,+34 910 000004,East,2024-07-24,2026-05-28,CR00004-1,sales
+  ASTER LABS 0090  ,SYN00000090,,+34 910 000090,,2024-03-03,2023-01-01,CR00090-1,sales
+Aster Labs 0115,SYN00000115,accounts115@customer.example,+34910000115,East,2024-06-21,2026-03-16,CR00115-0,administration
+  SOLSTICE STUDIO 0053  ,SYN00000053,accounts53@customer.example,+34 910 000053,East,2024-06-22,2026-07-26,CR00053-1,sales
+  COBALT STUDIO 0076  ,SYN00000076,invalid-email,+34 910 000076,South,2024-03-23,2026-05-07,CR00076-1,sales
+Cobalt Trading 0021,SYN00000021,accounts21@customer.example,+34910000021,South,2024-02-21,2026-08-27,CR00021-0,administration
+Juniper Works 0062,SYN00000062,accounts62@customer.example,+34910000062,South,2024-04-29,2026-09-29,CR00062-0,administration
+  COBALT WORKS 0061  ,SYN00000061,accounts61@customer.example,+34 910 000061,West,2024-02-06,2026-04-18,CR00061-1,sales
+Solstice Supply 0108,SYN00000108,accounts108@customer.example,+34910000108,East,2024-05-11,2026-08-25,CR00108-0,administration
+  SOLSTIC WORKS 0088  ,SYN00000088,accounts88@customer.example,+34 910 000088,West,2024-03-04,2026-09-02,CR00088-1,sales
+  JUNIPER SUPPLY 0057  ,SYN00000057,invalid-email,+34 910 000057,North,2024-02-08,2026-07-05,CR00057-1,sales
+Juniper Supply 0007,SYN00000007,accounts7@customer.example,+34910000007,West,2024-07-02,2026-07-09,CR00007-0,administration
+  JUNIPER SUPPLY 0107  ,SYN00000107,accounts107@customer.example,+34 910 000107,West,2024-05-19,2026-03-27,CR00107-1,sales
+  ASTER TRADING 0045  ,SYN00000045,,+34 910 000045,Central,2024-07-14,2026-03-27,CR00045-1,sales
+  VELA SUPPLY 0009  ,SYN00000009,accounts9@customer.example,+34 910 000009,North,2024-06-01,2026-09-22,CR00009-1,sales
+  JUNIPER STUDIO 0077  ,,accounts77@customer.example,+34 910 000077,South,2024-01-29,2026-05-08,CR00077-1,sales
+  SOLSTICE SUPPLY 0083  ,SYN00000083,accounts83@customer.example,+34 910 000083,Central,2024-06-16,2026-03-31,CR00083-1,sales
+Aster Trading 0095,SYN00000095,accounts95@customer.example,+34910000095,South,2024-03-06,2026-04-22,CR00095-0,administration
+  SOLSTICE LABS 0043  ,SYN00000043,accounts43@customer.example,+34 910 000043,South,2024-04-07,2026-06-24,CR00043-1,sales
+Vela Labs 0119,SYN00000119,accounts119@customer.example,+34910000119,North,2024-05-30,2026-05-04,CR00119-0,administration
+  ASTER LABS 0115  ,SYN00000115,,+34 910 000115,East,2024-06-21,2026-03-16,CR00115-1,sales
+  SOLSTICE TRADING 0098  ,,accounts98@customer.example,+34 910 000098,West,2024-04-17,2026-08-21,CR00098-1,sales
+  COBALT STUDIO 0101  ,SYN00000101,accounts101@customer.example,+34 910 000101,North,2024-04-19,2026-08-03,CR00101-1,sales
+Solstice Supply 0008,SYN00000008,accounts8@customer.example,+34910000008,South,2024-05-17,2026-04-26,CR00008-0,administration
+Juniper Trading 0097,SYN00000097,accounts97@customer.example,+34910000097,West,2024-01-24,2026-07-29,CR00097-0,administration
+Vela Studio 0054,SYN00000054,accounts54@customer.example,+34910000054,East,2024-06-16,2026-06-13,CR00054-0,administration
+Aster Works 0035,SYN00000035,accounts35@customer.example,+34910000035,North,2024-06-07,2026-06-26,CR00035-0,administration
+Solstice Trading 0023,SYN00000023,accounts23@customer.example,+34910000023,Central,2024-04-08,2026-03-29,CR00023-0,administration
+Aster Supply 0080,SYN00000080,accounts80@customer.example,+34910000080,Central,2024-03-28,2026-07-28,CR00080-0,administration
+Aster Trading 0045,SYN00000045,accounts45@customer.example,+34910000045,Central,2024-07-14,2026-03-27,CR00045-0,administration
+Aster Works 0060,SYN00000060,accounts60@customer.example,+34910000060,Central,2024-08-13,2026-07-20,CR00060-0-copy,administration
+  JUNIPER WORKS 0037  ,SYN00000037,accounts37@customer.example,+34 910 000037,Central,2024-05-13,2026-04-27,CR00037-1,sales
+Cobalt Studio 0076,SYN00000076,accounts76@customer.example,+34910000076,South,2024-03-23,2026-05-07,CR00076-0,administration
+  COBALT WORKS 0086  ,SYN00000086,accounts86@customer.example,+34 910 000086,North,2024-07-02,2026-08-14,CR00086-1,sales
+Aster Trading 0070,SYN00000070,accounts70@customer.example,+34910000070,West,2024-06-13,2026-05-20,CR00070-0,administration
+Juniper Trading 0022,SYN00000022,accounts22@customer.example,+34910000022,North,2024-03-07,2026-08-02,CR00022-0,administration
+  VELA LABS 0069  ,SYN00000069,accounts69@customer.example,+34 910 000069,East,2024-03-13,2026-09-09,CR00069-1,sales
+  JUNIPER WORKS 0062  ,SYN00000062,accounts62@customer.example,+34 910 000062,South,2024-04-29,2026-09-29,CR00062-1,sales
+Vela Works 0064,SYN00000064,accounts64@customer.example,+34910000064,East,2024-04-28,2026-06-14,CR00064-0,administration
+Vela Trading 0049,SYN00000049,accounts49@customer.example,+34910000049,West,2024-01-06,2026-06-28,CR00049-0,administration
+  COBALT SUPPLY 0031  ,SYN00000031,accounts31@customer.example,+34 910 000031,South,2024-03-08,2026-09-26,CR00031-1,sales
+Vela Studio 0004,SYN00000004,accounts4@customer.example,+34910000004,East,2024-07-24,2026-05-28,CR00004-0,administration
+Aster Works 0010,SYN00000010,accounts10@customer.example,+34910000010,East,2024-05-15,2026-08-26,CR00010-0,administration
+  ASTR WORKS 0060  ,SYN00000060,,+34 910 000060,,2024-08-13,2023-01-01,CR00060-1,sales
+Solstice Trading 0073,SYN00000073,accounts73@customer.example,+34910000073,North,2024-03-27,2026-08-05,CR00073-0,administration
+Aster Supply 0005,SYN00000005,accounts5@customer.example,+34910000005,Central,2024-05-15,2026-09-14,CR00005-0,administration
+Vela Trading 0099,SYN00000099,accounts99@customer.example,+34910000099,North,2024-08-04,2026-03-24,CR00099-0,administration
+Cobalt Trading 0071,SYN00000071,accounts71@customer.example,+34910000071,North,2024-05-31,2026-05-19,CR00071-0,administration
+Juniper Works 0037,SYN00000037,accounts37@customer.example,+34910000037,Central,2024-05-13,2026-04-27,CR00037-0,administration
+  VELA TRADING 0099  ,SYN00000099,accounts99@customer.example,+34 910 000099,North,2024-08-04,2026-03-24,CR00099-1,sales
+  ASTER SUPPLY 0030  ,SYN00000030,,+34 910 000030,,2024-07-24,2023-01-01,CR00030-1,sales
+Juniper Supply 0107,SYN00000107,accounts107@customer.example,+34910000107,West,2024-05-19,2026-03-27,CR00107-0,administration
+  JUNIPER TRADING 0097  ,SYN00000097,accounts97@customer.example,+34 910 000097,West,2024-01-24,2026-07-29,CR00097-1,sales
+  JUNIPER STUDIO 0102  ,SYN00000102,accounts102@customer.example,+34 910 000102,,2024-06-17,2026-05-29,CR00102-1,sales
+Aster Works 0110,SYN00000110,accounts110@customer.example,+34910000110,South,2024-04-21,2026-06-16,CR00110-0,administration
+Vela Supply 0059,SYN00000059,accounts59@customer.example,+34910000059,West,2024-04-30,2026-09-26,CR00059-0,administration
+  ASTR STUDIO 0100  ,SYN00000100,,+34 910 000100,Central,2024-01-31,2023-01-01,CR00100-1,sales
+Cobalt Supply 0006,SYN00000006,accounts6@customer.example,+34910000006,North,2024-01-20,2026-05-02,CR00006-0,administration
+  VELA LABS 0019  ,SYN00000019,invalid-email,+34 910 000019,East,2024-04-14,2026-06-05,CR00019-1,sales
+  JUNIPER SUPPLY 0082  ,SYN00000082,accounts82@customer.example,+34 910 000082,North,2024-04-28,2026-05-31,CR00082-1,sales
+  ASTER SUPPLY 0005  ,SYN00000005,,+34 910 000005,Central,2024-05-15,2026-09-14,CR00005-1,sales
+  SOLSTICE WORKS 0063  ,,accounts63@customer.example,+34 910 000063,Central,2024-06-16,2026-04-04,CR00063-1,sales
+  VLA SUPPLY 0084  ,,accounts84@customer.example,+34 910 000084,,2024-04-19,2026-03-19,CR00084-1,sales
+Aster Trading 0020,SYN00000020,accounts20@customer.example,+34910000020,East,2024-08-23,2026-04-25,CR00020-0-copy,administration
+  ASTER WORKS 0035  ,,,+34 910 000035,North,2024-06-07,2026-06-26,CR00035-1,sales
+Aster Works 0085,SYN00000085,accounts85@customer.example,+34910000085,West,2024-03-04,2026-08-15,CR00085-0,administration
+  SOLSTIC LABS 0068  ,SYN00000068,accounts68@customer.example,+34 910 000068,North,2024-02-27,2026-07-29,CR00068-1,sales
+  COBALT TRADING 0071  ,SYN00000071,accounts71@customer.example,+34 910 000071,North,2024-05-31,2026-05-19,CR00071-1,sales
+Juniper Labs 0042,SYN00000042,accounts42@customer.example,+34910000042,West,2024-04-08,2026-05-19,CR00042-0,administration
+Solstice Studio 0003,SYN00000003,accounts3@customer.example,+34910000003,East,2024-04-23,2026-05-24,CR00003-0,administration
+Aster Trading 0070,SYN00000070,accounts70@customer.example,+34910000070,West,2024-06-13,2026-05-20,CR00070-0-copy,administration
+  COBALT STUDIO 0001  ,SYN00000001,accounts1@customer.example,+34 910 000001,West,2024-06-09,2026-06-06,CR00001-1,sales
+Cobalt Works 0011,SYN00000011,accounts11@customer.example,+34910000011,Central,2024-05-12,2026-06-24,CR00011-0,administration
+Cobalt Supply 0106,SYN00000106,accounts106@customer.example,+34910000106,West,2024-07-13,2026-03-16,CR00106-0,administration
+  JUNIPR TRADING 0072  ,SYN00000072,accounts72@customer.example,+34 910 000072,,2024-05-25,2026-09-07,CR00072-1,sales
+  JUNIPER STUDIO 0002  ,SYN00000002,accounts2@customer.example,+34 910 000002,West,2024-06-06,2026-09-12,CR00002-1,sales
+Aster Labs 0015,SYN00000015,accounts15@customer.example,+34910000015,West,2024-03-13,2026-09-02,CR00015-0,administration
+  ASTER STUDIO 0075  ,SYN00000075,,+34 910 000075,East,2024-01-22,2026-05-22,CR00075-1,sales
+Solstice Labs 0093,SYN00000093,accounts93@customer.example,+34910000093,South,2024-04-17,2026-04-18,CR00093-0,administration
+Aster Labs 0065,SYN00000065,accounts65@customer.example,+34910000065,South,2024-04-17,2026-09-02,CR00065-0,administration
+  COBALT LABS 0116  ,SYN00000115,accounts116@customer.example,+34 910 000116,North,2024-06-08,2026-08-31,CR00116-1,sales
+Solstice Supply 0058,SYN00000058,accounts58@customer.example,+34910000058,West,2024-08-04,2026-08-05,CR00058-0,administration
+Aster Studio 0075,SYN00000075,accounts75@customer.example,+34910000075,East,2024-01-22,2026-05-22,CR00075-0,administration
+Vela Studio 0029,SYN00000029,accounts29@customer.example,+34910000029,East,2024-01-14,2026-06-04,CR00029-0,administration
+Vela Works 0114,SYN00000114,accounts114@customer.example,+34910000114,East,2024-04-28,2026-03-21,CR00114-0,administration
+Juniper Labs 0117,SYN00000117,accounts117@customer.example,+34910000117,North,2024-04-13,2026-04-05,CR00117-0,administration
+  JUNIPR STUDIO 0052  ,SYN00000052,accounts52@customer.example,+34 910 000052,South,2024-07-04,2026-03-24,CR00052-1,sales
+  COBALT LABS 0016  ,SYN00000016,accounts16@customer.example,+34 910 000016,East,2024-05-24,2026-05-18,CR00016-1,sales
+  VELA SUPPLY 0059  ,SYN00000059,accounts59@customer.example,+34 910 000059,West,2024-04-30,2026-09-26,CR00059-1,sales
+  SOLSTICE STUDIO 0003  ,SYN00000003,accounts3@customer.example,+34 910 000003,East,2024-04-23,2026-05-24,CR00003-1,sales
+Solstice Studio 0103,SYN00000103,accounts103@customer.example,+34910000103,North,2024-02-18,2026-06-19,CR00103-0,administration
+Juniper Studio 0002,SYN00000002,accounts2@customer.example,+34910000002,West,2024-06-06,2026-09-12,CR00002-0,administration
+Vela Studio 0079,SYN00000079,accounts79@customer.example,+34910000079,West,2024-08-18,2026-04-30,CR00079-0,administration
+  SOLSTIC STUDIO 0028  ,,accounts28@customer.example,+34 910 000028,East,2024-07-16,2026-05-31,CR00028-1,sales
+Juniper Trading 0072,SYN00000072,accounts72@customer.example,+34910000072,East,2024-05-25,2026-09-07,CR00072-0,administration
+Solstice Supply 0083,SYN00000083,accounts83@customer.example,+34910000083,Central,2024-06-16,2026-03-31,CR00083-0,administration
+Aster Supply 0030,SYN00000030,accounts30@customer.example,+34910000030,East,2024-07-24,2026-08-03,CR00030-0,administration
+  SOLSTIC TRADING 0048  ,SYN00000048,accounts48@customer.example,+34 910 000048,,2024-03-21,2026-06-14,CR00048-1,sales
+  SOLSTICE TRADING 0023  ,SYN00000023,accounts23@customer.example,+34 910 000023,Central,2024-04-08,2026-03-29,CR00023-1,sales
+  VLA STUDIO 0104  ,SYN00000104,accounts104@customer.example,+34 910 000104,West,2024-06-22,2026-04-02,CR00104-1,sales
+  ASTER STUDIO 0025  ,SYN00000025,,+34 910 000025,West,2024-07-23,2026-06-06,CR00025-1,sales
+Juniper Labs 0017,SYN00000017,accounts17@customer.example,+34910000017,North,2024-01-08,2026-09-10,CR00017-0,administration
+Juniper Supply 0082,SYN00000082,accounts82@customer.example,+34910000082,North,2024-04-28,2026-05-31,CR00082-0,administration
+Aster Labs 0040,SYN00000040,accounts40@customer.example,+34910000040,North,2024-08-27,2026-08-06,CR00040-0-copy,administration
+Aster Trading 0020,SYN00000020,accounts20@customer.example,+34910000020,East,2024-08-23,2026-04-25,CR00020-0,administration
+  ASTER LABS 0065  ,SYN00000065,,+34 910 000065,South,2024-04-17,2026-09-02,CR00065-1,sales
+Solstice Studio 0078,SYN00000078,accounts78@customer.example,+34910000078,East,2024-03-22,2026-03-27,CR00078-0,administration
+Solstice Trading 0048,SYN00000048,accounts48@customer.example,+34910000048,West,2024-03-21,2026-06-14,CR00048-0,administration
+Aster Supply 0055,SYN00000055,accounts55@customer.example,+34910000055,North,2024-04-20,2026-06-18,CR00055-0,administration
+  SOLSTICE WORKS 0038  ,SYN00000038,invalid-email,+34 910 000038,South,2024-05-01,2026-09-18,CR00038-1,sales
+Aster Studio 0050,SYN00000050,accounts50@customer.example,+34910000050,West,2024-01-26,2026-04-22,CR00050-0-copy,administration
+  COBALT LABS 0091  ,,accounts91@customer.example,+34 910 000091,Central,2024-06-21,2026-07-18,CR00091-1,sales
+Aster Labs 0090,SYN00000090,accounts90@customer.example,+34910000090,East,2024-03-03,2026-06-13,CR00090-0-copy,administration
+  VELA STUDIO 0029  ,SYN00000028,accounts29@customer.example,+34 910 000029,East,2024-01-14,2026-06-04,CR00029-1,sales
+Solstice Labs 0043,SYN00000043,accounts43@customer.example,+34910000043,South,2024-04-07,2026-06-24,CR00043-0,administration
+  COBALT SUPPLY 0081  ,SYN00000081,accounts81@customer.example,+34 910 000081,East,2024-08-06,2026-09-09,CR00081-1,sales
+  VELA LABS 0119  ,,accounts119@customer.example,+34 910 000119,North,2024-05-30,2026-05-04,CR00119-1,sales
+  ASTER SUPPLY 0105  ,,,+34 910 000105,West,2024-03-14,2026-08-10,CR00105-1,sales
+Vela Labs 0044,SYN00000044,accounts44@customer.example,+34910000044,North,2024-04-10,2026-07-04,CR00044-0,administration
+  COBALT STUDIO 0026  ,SYN00000026,accounts26@customer.example,+34 910 000026,East,2024-01-09,2026-07-03,CR00026-1,sales
+Aster Supply 0030,SYN00000030,accounts30@customer.example,+34910000030,East,2024-07-24,2026-08-03,CR00030-0-copy,administration
+  COBALT LABS 0066  ,SYN00000066,accounts66@customer.example,+34 910 000066,,2024-02-09,2026-08-01,CR00066-1,sales
+Cobalt Studio 0101,SYN00000101,accounts101@customer.example,+34910000101,North,2024-04-19,2026-08-03,CR00101-0,administration
+Juniper Studio 0077,SYN00000077,accounts77@customer.example,+34910000077,South,2024-01-29,2026-05-08,CR00077-0,administration
+  COBALT LABS 0041  ,SYN00000041,accounts41@customer.example,+34 910 000041,West,2024-06-08,2026-06-25,CR00041-1,sales
+  ASTR SUPPLY 0080  ,SYN00000080,,+34 910 000080,Central,2024-03-28,2023-01-01,CR00080-1,sales
+  COBALT SUPPLY 0006  ,SYN00000006,accounts6@customer.example,+34 910 000006,,2024-01-20,2026-05-02,CR00006-1,sales
+Solstice Supply 0033,SYN00000033,accounts33@customer.example,+34910000033,East,2024-03-11,2026-03-23,CR00033-0,administration
+  COBALT TRADING 0021  ,,accounts21@customer.example,+34 910 000021,South,2024-02-21,2026-08-27,CR00021-1,sales
+  SOLSTICE LABS 0118  ,SYN00000118,accounts118@customer.example,+34 910 000118,South,2024-03-15,2026-09-12,CR00118-1,sales
+Juniper Supply 0032,SYN00000032,accounts32@customer.example,+34910000032,North,2024-08-08,2026-08-31,CR00032-0,administration
+  VELA WORKS 0089  ,SYN00000089,accounts89@customer.example,+34 910 000089,Central,2024-07-05,2026-06-12,CR00089-1,sales
+  JUNIPR LABS 0092  ,SYN00000092,accounts92@customer.example,+34 910 000092,Central,2024-07-08,2026-07-31,CR00092-1,sales
+  ASTER LABS 0015  ,SYN00000015,,+34 910 000015,West,2024-03-13,2026-09-02,CR00015-1,sales
+Aster Works 0110,SYN00000110,accounts110@customer.example,+34910000110,South,2024-04-21,2026-06-16,CR00110-0-copy,administration
+  JUNIPR SUPPLY 0032  ,SYN00000032,accounts32@customer.example,+34 910 000032,North,2024-08-08,2026-08-31,CR00032-1,sales
+  COBALT SUPPLY 0056  ,,accounts56@customer.example,+34 910 000056,East,2024-06-21,2026-04-14,CR00056-1,sales
+Juniper Trading 0047,SYN00000047,accounts47@customer.example,+34910000047,Central,2024-02-10,2026-06-08,CR00047-0,administration
+  VELA LABS 0094  ,SYN00000094,accounts94@customer.example,+34 910 000094,Central,2024-06-25,2026-06-30,CR00094-1,sales
+Cobalt Supply 0056,SYN00000056,accounts56@customer.example,+34910000056,East,2024-06-21,2026-04-14,CR00056-0,administration
+Solstice Trading 0098,SYN00000098,accounts98@customer.example,+34910000098,West,2024-04-17,2026-08-21,CR00098-0,administration
+  JUNIPER STUDIO 0027  ,SYN00000027,accounts27@customer.example,+34 910 000027,Central,2024-02-26,2026-07-23,CR00027-1,sales
+  SOLSTIC SUPPLY 0108  ,SYN00000108,accounts108@customer.example,+34 910 000108,,2024-05-11,2026-08-25,CR00108-1,sales
