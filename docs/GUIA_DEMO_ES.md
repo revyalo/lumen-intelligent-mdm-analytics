@@ -26,3 +26,12 @@ El cargador de CSV admite exploración, calidad e informes sobre tablas arbitrar
 ## Estado real
 
 Están disponibles las ocho secciones y los módulos reutilizables, las pruebas, dos notebooks ejecutados y los experimentos en dos tamaños y dos semillas. Embeddings es una extensión opcional, sin modelo descargado ni evaluación inventada. No hay predicción de demanda. La aplicación es una demostración local para un analista; no incluye autenticación multiusuario ni despliegue empresarial. El workflow de GitHub está preparado y todavía no ha corrido en GitHub. Se ha creado un repositorio privado vacío de preparación, sin push. Revisa RELEASE_AUDIT.md antes de aprobar la subida privada y espera al resultado de CI antes de valorar hacer el repositorio público.
+
+
+## Ampliación local: Operational Time Analytics
+
+Abre la novena sección en la navegación. La demo inicial calcula 2 horas de uso, 50% de utilización (horario explícito 08:00–12:00), máximo de 3 personas y 6 parejas. Activa capacidad 2 para ver 25 minutos de sobreocupación. Los datos son ficticios.
+
+Prueba **Identity mapping demo** y activa **Apply reviewed identity map** para comparar identidades antes/después. En **Validation challenge**, los errores impiden calcular hasta que autorices excluir filas en cuarentena. **Multi-day synthetic** muestra el mapa por días/horas. Los filtros de empleados cambian la población analizada. Exporta el ZIP desde **Export → Build operational evidence report**.
+
+Esta ampliación permanece en una rama local; la versión del paquete sigue siendo 0.1.0. Consulta [contratos, algoritmos, experimentos y límites](operational_time/README.md) y [comprobación de entrega](operational_time/DELIVERY.md).

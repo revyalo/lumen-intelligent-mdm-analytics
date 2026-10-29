@@ -35,7 +35,7 @@ def proposals(frame: pd.DataFrame, method: str = "fuzzy"):
     return match(frame, method)
 
 
-def setup():
+def setup_style():
     pio.templates.default = "plotly_dark"
     st.markdown("""<style>
     .block-container {padding-top: 4rem; max-width: 1500px;}
@@ -48,6 +48,10 @@ def setup():
     .eyebrow {font-size:11px; letter-spacing:.19em; color:#48D6BA; margin-bottom:8px; font-weight:700;}
     .muted {color:#AFB9D1; font-size:14px; line-height:1.7;}
     </style>""", unsafe_allow_html=True)
+
+
+def setup():
+    setup_style()
     with st.sidebar:
         st.caption("SYNTHETIC DATA LAB")
         _restore("size", "demo")

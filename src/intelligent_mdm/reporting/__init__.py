@@ -1,9 +1,7 @@
 """Portable evidence reports generated from actual selected data; no LLM required."""
 import base64
 import html
-import io
 import json
-import zipfile
 from importlib.metadata import version
 
 import pandas as pd
@@ -15,6 +13,7 @@ from intelligent_mdm.eda import missing_patterns, profile, static_distribution
 from intelligent_mdm.matching import match
 from intelligent_mdm.models import DatasetBundle
 from intelligent_mdm.sql import run_named
+from intelligent_mdm.reporting.archive import package_evidence
 
 
 def insights(bundle: DatasetBundle) -> list[dict]:
@@ -104,24 +103,18 @@ def build_report(bundle: DatasetBundle, frame: pd.DataFrame | None = None, name:
                 "<h2>Invoice amount distribution</h2><img alt='Distribution of actual synthetic invoice amounts' src='data:image/png;base64,"+
                 base64.b64encode(picture).decode()+"'><p>Extreme bulk purchases can be legitimate. No observations were removed.</p>"
                 "<p>Exact definitions and caveats are included in report.md and docs/METHODOLOGY.md in the source project.</p></html>")
-    stream = io.BytesIO()
-    with zipfile.ZipFile(stream, "w", zipfile.ZIP_DEFLATED) as archive:
-        archive.writestr("report.json", json.dumps(payload, indent=2, default=str, allow_nan=False))
-        archive.writestr("report.md", "\n".join(md))
-        archive.writestr("report.html", html_doc)
-        archive.writestr("invoice_distribution.png", picture)
-        frames = {"original": raw, "normalized": clean, "cleaning_audit": audit,
-                  "statistics": prof["numeric"], "schema": prof["schema"].reset_index(names="field"),
-                  "missing_patterns": missing_patterns(raw), "quality_rules_before": before["rules"],
-                  "quality_rules_after": after["rules"], "quality_sources": compare_sources(raw, name=name,
-                      tables=bundle.tables, as_of=bundle.metadata["as_of"]),
-                  "rfm": rfm(bundle)}
-        frames.update({q: run_named(bundle, q) for q in ["monthly_sales", "customer_summary", "product_performance", "category_margin", "price_history"]})
-        if {"record_id", "name"} <= set(raw):
-            try:
-                frames["matching_candidates"] = match(raw)
-            except ValueError as exc:
-                archive.writestr("matching_status.txt", f"Not evaluated: {exc}. Original rows are preserved.")
-        for filename, data in frames.items():
-            archive.writestr(filename+".csv", data.to_csv(index=False))
-    return stream.getvalue()
+    files = {"report.json": json.dumps(payload, indent=2, default=str, allow_nan=False),
+             "report.md": "\n".join(md), "report.html": html_doc, "invoice_distribution.png": picture}
+    frames = {"original": raw, "normalized": clean, "cleaning_audit": audit,
+              "statistics": prof["numeric"], "schema": prof["schema"].reset_index(names="field"),
+              "missing_patterns": missing_patterns(raw), "quality_rules_before": before["rules"],
+              "quality_rules_after": after["rules"], "quality_sources": compare_sources(raw, name=name,
+                  tables=bundle.tables, as_of=bundle.metadata["as_of"]),
+              "rfm": rfm(bundle)}
+    frames.update({q: run_named(bundle, q) for q in ["monthly_sales", "customer_summary", "product_performance", "category_margin", "price_history"]})
+    if {"record_id", "name"} <= set(raw):
+        try:
+            frames["matching_candidates"] = match(raw)
+        except ValueError as exc:
+            files["matching_status.txt"] = f"Not evaluated: {exc}. Original rows are preserved."
+    return package_evidence(files, frames)

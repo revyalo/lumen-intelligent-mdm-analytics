@@ -16,6 +16,7 @@ pages = {
     "ANALYTICS": [st.Page("pages/eda.py", title="Exploratory Analysis", icon=":material/monitoring:"),
                   st.Page("pages/quality.py", title="Data Quality", icon=":material/verified:"),
                   st.Page("pages/business.py", title="Business Intelligence", icon=":material/stacked_line_chart:")],
+    "OPERATIONS": [st.Page("pages/operational_time.py", title="Operational Time Analytics", icon=":material/schedule:")],
     "INTELLIGENCE": [st.Page("pages/entities.py", title="Entity Resolution", icon=":material/hub:"),
                      st.Page("pages/ml.py", title="Machine Learning", icon=":material/science:"),
                      st.Page("pages/reports.py", title="Reports", icon=":material/download:")],

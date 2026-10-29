@@ -1,0 +1,54 @@
+{
+  "expected": {
+    "scope": "Base demo, Atlas on 2026-09-30, availability 08:00\u201312:00, capacity 2",
+    "employees": 6,
+    "unique_pairs": 6,
+    "occupied_resource_seconds": 7200,
+    "person_seconds": 12000,
+    "available_resource_seconds": 14400,
+    "idle_resource_seconds": 7200,
+    "utilization": 0.5,
+    "peak_people_in_one_resource": 3,
+    "peak_intervals": [
+      [
+        "09:00",
+        "09:15"
+      ],
+      [
+        "11:10",
+        "11:20"
+      ]
+    ],
+    "overcapacity_seconds": 1500,
+    "ranking": "All six people tie with two distinct contacts",
+    "mean_stay_seconds": 2000,
+    "median_stay_seconds": 1800,
+    "aliases_note": "With alias rows, base expectations apply only after the explicit map"
+  },
+  "actual": {
+    "employees": 6,
+    "unique_pairs": 6,
+    "resource_day_pairs": 6,
+    "occupied_resource_seconds": 7200.0,
+    "person_seconds": 12000.0,
+    "available_resource_seconds": 14400.0,
+    "idle_resource_seconds": 7200.0,
+    "utilization": 0.5,
+    "peak_people_in_one_resource": 3,
+    "mean_stay_seconds": 2000.0,
+    "median_stay_seconds": 1800.0,
+    "consolidated_visits": 6,
+    "pair_comparisons": 6,
+    "capacity_configured": true
+  },
+  "peak_intervals": [
+    [
+      "09:00",
+      "09:15"
+    ],
+    [
+      "11:10",
+      "11:20"
+    ]
+  ]
+}

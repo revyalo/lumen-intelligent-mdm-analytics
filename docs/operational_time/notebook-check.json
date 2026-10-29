@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "notebooks": [
+    {
+      "notebook": "01_exploration_and_quality.ipynb",
+      "executed_code_cells": 10,
+      "error_outputs": 0
+    },
+    {
+      "notebook": "02_business_mdm_and_ml.ipynb",
+      "executed_code_cells": 12,
+      "error_outputs": 0
+    }
+  ],
+  "source_notebooks_modified": false
+}

@@ -69,6 +69,13 @@ jobs:
         run: python -m pytest --junitxml=runtime/test-results.xml
       - name: Smoke test the installed CLI
         run: intelligent-mdm generate --size demo --seed 42 --output runtime/demo
+      - name: Smoke test operational generation and report
+        run: |
+          python -m intelligent_mdm.cli time-generate --demo --output runtime/operational-demo
+          python -m intelligent_mdm.cli time-analyze --input runtime/operational-demo/visits.csv --opening 08:00 --closing 12:00 --capacity 2 --output runtime/operational-report.zip
+      - name: Measure small operational fixtures
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python -m intelligent_mdm.cli time-benchmarks --sizes 100 1000 --seeds 42 --output runtime/operational-benchmarks
       - name: Run reproducible experiments
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
         run: intelligent-mdm experiments --scales demo --seeds 42 --output runtime/experiments

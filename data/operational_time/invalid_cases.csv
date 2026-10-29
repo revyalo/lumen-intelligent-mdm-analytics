@@ -1,0 +1,6 @@
+Employee,Start,End,Room,Date
+Person 01,08:15,09:15,Atlas,2026-09-30
+Person 01,08:15,09:15,Atlas,2026-09-30
+,10:00,10:30,Atlas,2026-09-30
+Person invalid,bad,10:00,Atlas,2026-09-30
+Person reversed,12:00,11:00,Atlas,2026-09-30

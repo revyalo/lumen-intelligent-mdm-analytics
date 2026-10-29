@@ -4,6 +4,8 @@
 
 **v0.1.0 preparation:** locally audited and uploaded to a private repository with owner approval. GitHub-hosted CI is blocked before runner startup; no remote test pass is claimed. [Release audit](docs/RELEASE_AUDIT.md) · [Changelog](CHANGELOG.md) · [MIT license](LICENSE).
 
+**Unreleased branch:** Operational Time Analytics adds a ninth section on a separate local branch. The package version remains 0.1.0; this extension has not been pushed. [Operational guide, contracts and evidence](docs/operational_time/README.md).
+
 A local Python portfolio project for data analytics, data engineering and machine learning. The fictional **Lumen Distribution** workspace brings exploratory analysis, quality scoring, SQL business intelligence and reversible master-data review into one Streamlit application. All results are calculated from the selected data; no KPI is hard-coded.
 
 ![Lumen dashboard](docs/screenshots/overview.jpg)
@@ -32,11 +34,12 @@ For the project owner: [Guía rápida en español](docs/GUIA_DEMO_ES.md).
 | Exploratory Analysis | How do measurements vary, relate and go missing? | Descriptive statistics, modes/quantiles, categorical counts, distributions, correlations, scatterplots, missingness patterns, IQR/z-score diagnostics |
 | Data Quality | Which defects matter, and what does cleaning change? | Configurable dimension weights, field tests, source comparisons, audited normalization and explicit imputation |
 | Business Intelligence | Who buys, what sells and where does margin come from? | Customer/product KPIs, monthly growth, period comparisons, weighted prices, low rotation, RFM and an editable DuckDB SQL lab |
+| Operational Time Analytics | When are resources occupied, and who overlaps? | Validated visit CSVs, interval unions, unique-person occupancy, contact evidence, tied rankings, explicit availability/capacity and reproducible exports |
 | Entity Resolution | Which source records may represent the same entity? | Exact/fuzzy proposals, conflicts, human accept/reject/revoke, golden snapshots and field lineage |
 | Machine Learning | Are customer patterns separable, and which observations are unusual? | Scaled K-Means, silhouette selection, RFM cross-tab, Isolation Forest/IQR/z-score comparison and labelled matching metrics |
 | Reports | Can another analyst reproduce these findings? | ZIP containing HTML, Markdown, JSON, CSV tables, audit log, manifest and a Matplotlib PNG |
 
-The sidebar selects the **analysis table**, source department and original/normalized preview for Explorer, EDA, Quality and Entity Resolution. Overview, BI and customer clustering use the **relational bundle** and their own visible date/region controls. An arbitrary uploaded CSV is not silently treated as an order/customer model. Inventory stays at its explicit as-of snapshot. Reports label their scope.
+The sidebar selects the **analysis table**, source department and original/normalized preview for Explorer, EDA, Quality and Entity Resolution. Overview, BI and customer clustering use the **relational bundle** and their own visible date/region controls. An arbitrary uploaded CSV is not silently treated as an order/customer model. Inventory stays at its explicit as-of snapshot. Reports label their scope. Operational Time Analytics has its own visit inputs, date/resource/population controls and exports, independent of the commercial bundle.
 
 ## Reproducible data
 
@@ -84,6 +87,9 @@ flowchart LR
   H --> N
   G --> N
   K --> N
+  O[Operational visit CSV / original fixtures] --> P[Strict temporal validation + interval analytics]
+  P --> L
+  P --> N
 ```
 
 ```text
@@ -96,9 +102,10 @@ src/intelligent_mdm/
   sql/                DuckDB execution and six analytical .sql examples
   matching/           Candidate blocks, exact/fuzzy scores, review ledger, lineage
   machine_learning/   K-Means, Isolation Forest, optional local semantic adapter
-  reporting/          Evidence reports, rule-based insights and experiment runner
+  operational_time/   Visit validation, interval sweeps, utilization, contact evidence, fixtures and benchmarks
+  reporting/          Evidence reports, shared archive packaging, insights and experiments
   models/             Bundle, key and relationship contracts
-dashboard/            Streamlit entry point and eight pages
+dashboard/            Streamlit entry point and nine pages
 notebooks/            Two executed notebooks with analytical reasoning
 scripts/              Portable launcher and notebook execution
 tests/               Data contracts, analytics, decisions, ML and UI checks
@@ -122,6 +129,14 @@ See [Validation and measured results](docs/VALIDATION.md), [experiment manifest]
 
 The two notebooks include saved outputs. `scripts/execute_notebooks.py` uses the current interpreter and executes every code cell. GitHub Actions is configured for Python 3.11/3.12 on Ubuntu and Python 3.12 on Windows, with lint, dependency consistency, publication checks, tests and notebook execution. The approved private push triggered Actions, but an account-level runner restriction prevented all three jobs from starting. [Run and diagnosis](docs/RELEASE_AUDIT.md#github-actions-attempt). The corrected workflow passes actionlint v1.7.12; Linux/Windows test results remain unverified.
 
+## Operational Time Analytics · unreleased
+
+![Operational Time Analytics](docs/screenshots/operational-time.png)
+
+Analyze original synthetic or uploaded Employee/Start/End records using half-open intervals, per-person unions and event sweeps. The known-answer demo yields **2 occupied resource-hours, 50% utilization of an explicit four-hour window, a peak of 3 people and 6 qualifying unique pairs**. All results are computed. Availability and capacity are never inferred; invalid rows require explicit quarantine consent. Identity aliases need a reviewed exact map; the commercial MDM stays intact.
+
+The page includes a presence timeline, occupancy curve, multi-day weighted heatmap, contact ranking, stay distributions and HTML/Markdown/JSON/CSV evidence ZIPs. [Definitions, CLI, complexity, measured results and limits](docs/operational_time/README.md). [Delivery verification](docs/operational_time/DELIVERY.md).
+
 ## Optional semantic extension
 
 ```bash
@@ -141,6 +156,6 @@ Production dependencies are exactly the requested stack: pandas/NumPy, DuckDB, S
 
 Created from a blank project with Codex assistance, using newly generated fiction and original Lumen identity. A historical assessment was consulted as background only. No source assessment document, original sample data, company brand resource or commercial template is included. The owner should review and understand this code before presenting it as portfolio work.
 
-This is a **tested local release candidate**. Code has been pushed to the [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) with the owner's approval. GitHub-hosted validation remains blocked before runner startup. No public release or tag exists; public visibility and release publication still require a separate decision.
+The base is a **tested local release candidate**. Operational Time Analytics is an unreleased local extension on `feature/operational-time-analytics`; its source is not present on GitHub yet. Code has been pushed to the [private preparation repository](https://github.com/revyalo/lumen-intelligent-mdm-analytics) with the owner's approval. GitHub-hosted validation remains blocked before runner startup. No public release or tag exists; public visibility and release publication still require a separate decision.
 
 The project’s own code, documentation, synthetic fixtures and original Lumen assets are covered by [MIT](LICENSE). Dependencies retain their own licenses. See [Third-party notices](THIRD_PARTY_NOTICES.md), the installed [license inventory](docs/audit/dependency-licenses.csv), and [publication metadata](docs/GITHUB_METADATA.md). The source release does not bundle dependency wheels or model weights.
